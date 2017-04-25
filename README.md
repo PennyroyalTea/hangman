@@ -13,7 +13,7 @@ This is a hangman realization for google app engine which does all the nasty job
 The servlet allows you to deploy your own hangman web application without any programming, using only HTML, but nevertheless make it  personalized and stylish. So, you need to edit only 3 HTML files from the previous part of the instruction. The servlet will show this files in different stages of game. But also, to make this pages interactive, servlet will find some special words there (like %pattern) and change them by computer-generated information. Here is the list of probabilities (**REQUIRED** means that without this code the game can't be properly played) :
 
 1. **hangman-newGame-servlet.html** will be shown when the player starts the game. It should welcome the guest and have one text-field with name="id" and one submit button so that the user can choose the id of a game he wants to join.
-...pattern:
+... pattern:
 ..* %seed -- will be replaced by random number. Can be useful if you want to generate random id.
 
 2. **hangman-continue-servlet.html** will be shown when the player plays the game. It should show to user the part of the word he guessed and also give them a list of buttons to make a move.
