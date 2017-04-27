@@ -14,21 +14,21 @@ The servlet allows you to deploy your own hangman web application without any pr
 
 1. **hangman-newGame-servlet.html** will be shown when the player starts the game. It should welcome the guest and have one text-field with name="id" and one submit button so that the user can choose the id of a game he wants to join.
     pattern:
-    * %seed -- will be replaced by random number. Can be useful if you want to generate random id.
+    * %seed — will be replaced by random number. Can be useful if you want to generate random id.
 
 2. **hangman-continue-servlet.html** will be shown when the player plays the game. It should show to user the part of the word he guessed and also give them a list of buttons to make a move.
 
     pattern:
-    * %word [**REQUIRED**] -- will be replaced by the visible part of the word.
-    * %mistakes -- will be replaced by the number corresponding to the number wrong tries.
-    * %unusedButtons [**REQUIRED**] -- will be replaced by the list of submit buttons, each of them correspond to one unused letter.     Every   button has class="letter" so you can flexibly personalize them via CSS. 
+    * %word [**REQUIRED**] — will be replaced by the visible part of the word.
+    * %mistakes — will be replaced by the number corresponding to the number wrong tries.
+    * %unusedButtons [**REQUIRED**] — will be replaced by the list of submit buttons, each of them correspond to one unused letter.     Every   button has class="letter" so you can flexibly personalize them via CSS. 
 
 3. **hangman-end-servlet.html** will be shown when the player ends the game. It should congratulate them and may provide them some information about their statistics.
 
     pattern:
-    * %word -- will be replaced by the word player has guessed.
-    * %mistakes -- will be replaced by final number of mistakes.
-    * %comment  -- will be replaced by short comment, which shows the phase depending on the result. Experimental and better not to be used.
+    * %word — will be replaced by the word player has guessed.
+    * %mistakes — will be replaced by final number of mistakes.
+    * %comment  — will be replaced by short comment, which shows the phase depending on the result. Experimental and better not to be used.
 
 Don't forget that you can still use CSS and javascript on this pages.
 
